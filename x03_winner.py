@@ -17,9 +17,21 @@ Output:
 1: player wins
 '''
 
+#from x01_player import playerChoice
+#from x02_computer import computerChoice
+
+#player=playerChoice()
+#computer = computerChoice()
+
 def playerWins(computer,player):
-  
-  return 0
+  if player==computer:
+    gameOutcome=0
+  elif player==(computer+1)%3:
+    gameOutcome=1
+  else:
+    gameOutcome=-1
+  print(gameOutcome)
+  return gameOutcome
 
 if __name__ == "__main__":
   assert playerWins(1,1) == 0

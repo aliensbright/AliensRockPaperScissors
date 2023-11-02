@@ -24,7 +24,16 @@ def playerChoice():
   1: paper
   2: scissors
   '''
-  return value
+  PlayChoice = input('Rock, Paper, Scissors:')
+  PlayChoice=PlayChoice.lower()
+  print(PlayChoice)
+  if PlayChoice=='rock':
+    PlayChoice=0
+  elif PlayChoice=='paper':
+    PlayChoice=1
+  elif PlayChoice=='scissors':
+    PlayChoice=2
+  return PlayChoice
 
 
 if __name__ == "__main__":
