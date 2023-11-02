@@ -10,13 +10,16 @@ output:
 """
 import random
 def computerChoice():
-  compChoice=random.randint(1, 3)
-  
-  
-  
+  compChoice=random.randint(0, 2)
+  print('Computer chooses: ',end="")
+  if compChoice==0:
+    print('rock')
+  elif compChoice==1:
+    print('paper')
+  else:
+    print('scissors')
   return compChoice
 
 
 if __name__ == "__main__":
-  computer = computerChoice()
-  print(computer)
+  pass

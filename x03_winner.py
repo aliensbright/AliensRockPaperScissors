@@ -30,7 +30,6 @@ def playerWins(computer,player):
     gameOutcome=1
   else:
     gameOutcome=-1
-  print(gameOutcome)
   return gameOutcome
 
 if __name__ == "__main__":

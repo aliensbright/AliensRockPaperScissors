@@ -26,16 +26,18 @@ def playerChoice():
   '''
   PlayChoice = input('Rock, Paper, Scissors:')
   PlayChoice=PlayChoice.lower()
-  print(PlayChoice)
+  PlayChoice=PlayChoice.replace(' ','')
+  print('Player chooses:',PlayChoice)
   if PlayChoice=='rock':
     PlayChoice=0
   elif PlayChoice=='paper':
     PlayChoice=1
   elif PlayChoice=='scissors':
     PlayChoice=2
+  else:
+    PlayChoice=None
   return PlayChoice
 
 
 if __name__ == "__main__":
-  player = playerChoice()
-  print(player)
+  pass
